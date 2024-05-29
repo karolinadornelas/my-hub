@@ -9,15 +9,12 @@ const itemWidth = items[0].clientWidth;
 const totalItems = items.length;
 let interval = null;
 
-// Define a largura da track baseada no número de itens
+// largura a track por item
 track.style.width = `${itemWidth * totalItems}px`;
 
-// Função para mover o carousel
 const moveCarousel = () => {
     track.style.transform = `translateX(-${index * itemWidth}px)`;
 };
-
-// Função para avançar para o próximo slide
 const nextSlide = () => {
     index++;
     if (index > totalItems - 1) {
@@ -25,8 +22,6 @@ const nextSlide = () => {
     }
     moveCarousel();
 };
-
-// Função para voltar para o slide anterior
 const prevSlide = () => {
     index--;
     if (index < 0) {
@@ -35,30 +30,29 @@ const prevSlide = () => {
     moveCarousel();
 };
 
-// Event listener para o botão Próximo
+
 nextBtn.addEventListener('click', () => {
     nextSlide();
     resetInterval();
 });
 
-// Event listener para o botão Anterior
 prevBtn.addEventListener('click', () => {
     prevSlide();
     resetInterval();
 });
 
-// Função para iniciar o intervalo automático
+//intervalo automático
 const startInterval = () => {
     interval = setInterval(() => {
         nextSlide();
-    }, 5000); // 5000 milissegundos = 5 segundos
+    }, 5000); 
 };
 
-// Função para parar o intervalo automático
+//parar intervalo automático
 const resetInterval = () => {
     clearInterval(interval);
     startInterval();
 };
 
-// Inicia o carousel automático
+//iniciar carousel automático
 startInterval();
