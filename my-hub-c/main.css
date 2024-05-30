@@ -1,23 +1,24 @@
 body {
-  max-width: max-content;
+  max-width: 100%;
   background-color: rgb(255, 237, 209);
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
-  font-family: Helvetica;
+  font-family: Helvetica, sans-serif;
 }
 
 .navbar {
-  border: 1px solid orange;
   padding: 10px;
   display: flex;
   justify-content: space-between;
 }
 
+.content {
+  border: 1px solid black;
+}
+
 .main-bundle {
-  border: 1px solid red;
-  margin: 0 auto;
-  width: 100%;
-  height: 90vh;
+  margin: 0;
+  height: 70vh;
   font-size: 64px;
   display: flex;
   align-items: center;
@@ -25,60 +26,159 @@ body {
 }
 
 .main-bundle h1 {
-  border: 1px solid blue;
   width: 420px;
   word-break: break-all;
 }
 
 .deco-bundle {
-  border: 1px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
   height: 30px;
-  width: fit-content;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.square-deco-a {
-  height: 15px;
-  margin: 5px;
-  width: 15px;
-  background-color: blue;
+.deco-bundle-left,
+.deco-bundle-right {
+  display: flex;
+  align-items: center;
 }
 
-.square-deco-b {
+.deco-bundle-line {
+  display: flex;
+}
+
+.deco-line {
+  border-left: 1px solid black;
+  height: 32px;
+  width: 20px;
+}
+
+.deco-line-c {
+  border-right: 1px solid black;
+}
+
+.square-bundle {
+  display: flex;
+}
+
+.square-deco {
   margin: 5px;
   height: 15px;
   width: 15px;
+}
+
+.vermelho {
   background-color: red;
 }
 
-.square-deco-c {
-  margin: 5px;
+.amarelo {
+  background-color: yellow;
+}
 
+.verde {
+  background-color: rgb(0, 212, 18);
+}
+
+.azul {
+  background-color: blue;
+}
+
+.roxo {
+  background-color: rgb(66, 34, 126);
+}
+
+.star,
+.desktop,
+.bookmark {
+  margin: 10px;
   height: 15px;
   width: 15px;
-  background-color: yellow;
 }
 
 .bundle {
   display: flex;
-  margin: 0 auto;
+  margin: 0;
+}
+
+.curriculum-bundle {
+  display: flex;
+  align-items: center;
+  height: 75px;
+  text-transform: uppercase;
+}
+
+.curriculum-bundle i {
+  margin: 15px;
+  font-size: 25px;
+}
+
+.bb-x {
+  display: flex;
+  margin-top: 45px;
+  margin-left: 150px;
 }
 
 .profile-desc {
-  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
   width: 50%;
 }
 
+.profile-desc-info {
+  display: flex;
+  align-items: center;
+  margin-top: -15px;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  justify-content: space-between;
+}
+
 .profile-desc-pic-frame {
+  width: 230px;
+  height: 270px;
+  position: absolute;
+  border: 1px solid black;
+  background-color: rgb(253, 220, 186);
+}
+
+.profile-desc-pic-frame img {
+  margin: 15px;
+  width: 200px;
+  height: 190px;
+  border: 1px solid black;
+  background-color: rgb(204, 160, 116);
+}
+
+.profile-pic-frame-shadow {
+  width: 230px;
+  height: 270px;
+  background-color: black;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 .profile-desc-bubble-speech {
+  margin-top: 25px;
+  margin-left: 95px;
+  font-size: 14px;
+  padding: 10px;
+  width: 350px;
+  background-color: rgb(250, 230, 205);
+  border: 1px solid black;
+  border-radius: 15px;
+  border-right: 4px solid black;
+  border-bottom: 4px solid black;
 }
 
 .profile-desc-about-title {
   display: flex;
   align-items: center;
   text-align: center;
+}
+
+.profile-desc-scnd {
+  width: 50%;
 }
