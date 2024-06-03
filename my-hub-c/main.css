@@ -51,22 +51,20 @@ body {
   justify-content: center;
 }
 
-.main-bundle {
-  border: 2px solid green;
-  height: 70vh;
+.main-bundle-bx {
+  display: flex;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
   font-family: "LEMON MILK";
 }
 
-.main-bundle h1 {
-  font-size: 125px;
-  margin-bottom: 255px;
-  word-break: break-word;
+.main-bundle {
+  word-break: break-all;
 }
 
-.content-bundle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.main-bundle h1 {
+  margin-top: -70px;
 }
 
 .deco-bundle {
@@ -140,6 +138,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
+  align-items: center;
+  justify-content: center;
 }
 
 .curriculum-bundle {
@@ -152,12 +152,6 @@ body {
 .curriculum-bundle i {
   margin: 15px;
   font-size: 25px;
-}
-
-.bb-x {
-  display: flex;
-  margin-top: 45px;
-  margin-left: 150px;
 }
 
 .profile-desc {
@@ -205,7 +199,6 @@ body {
 
 .profile-desc-bubble-speech {
   margin-top: 25px;
-  margin-left: 75px;
   font-size: 14px;
   padding: 10px;
   width: 350px;
@@ -274,6 +267,8 @@ hr {
 
 .profile-desc-scnd {
   width: 50%;
+  align-items: center;
+  justify-items: center;
 }
 
 .title-ex {
@@ -394,14 +389,8 @@ hr {
   }
 
   .main-bundle h1 {
+    margin-top: 75px;
     font-size: 110px;
-    margin-left: 20px;
-  }
-
-  .bb-x {
-    align-items: center;
-    justify-content: center;
-    margin-left: -40px;
   }
 
   .profile-desc {
@@ -443,12 +432,6 @@ hr {
 
   .navbar {
     font-size: 12px;
-  }
-
-  .bb-x {
-    align-items: center;
-    justify-content: center;
-    margin-left: -40px;
   }
 
   .profile-desc {
@@ -499,12 +482,6 @@ hr {
     margin-top: 65px;
   }
 
-  .bb-x {
-    align-items: center;
-    justify-content: center;
-    margin-left: -40px;
-  }
-
   .profile-desc {
     width: 480px;
     padding: 0px;
@@ -538,11 +515,11 @@ hr {
     justify-content: center;
   }
   .main-bundle {
-    width: 420px;
   }
 
   .main-bundle h1 {
-    margin-top: 250px;
+    margin-top: 60px;
+    font-size: 100px;
   }
   .profile-desc-bubble-speech {
     margin: 0px;
@@ -561,23 +538,30 @@ hr {
   }
 
   .navbar {
-    font-size: 12px;
+    font-size: 20px;
   }
-  .content-bundle {
-    width: 100%;
+  .main-bundle-bx {
   }
 
   .main-bundle {
-    width: 500px;
-    justify-items: center;
-    align-items: center;
   }
 
   .main-bundle h1 {
-    margin-top: 65px;
   }
 
-  .bundle {
-    margin-left: 255px;
+  .deco-bundle {
+    font-size: 15px;
+  }
+
+  .profile-desc-about p {
+    font-size: 20px;
+  }
+
+  .profile-desc-bubble-speech p {
+    font-size: 18px;
+  }
+
+  .title-ex {
+    font-size: 20px;
   }
 }
