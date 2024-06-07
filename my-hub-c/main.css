@@ -29,11 +29,9 @@
 }
 
 body {
-  max-width: 100%;
   background-color: rgb(255, 237, 209);
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
   font-family: "FUTURA AL", sans-serif;
 }
 
@@ -53,20 +51,24 @@ body {
 
 .main-bundle-bx {
   display: flex;
-  height: 500px;
-  align-items: center;
+  width: 100%;
   justify-content: center;
+  height: 80vh;
+  border: px solid black;
   font-family: "LEMON MILK";
 }
 
 .main-bundle {
   word-break: break-all;
+  margin-left: 150px;
+  
 }
 
 .main-bundle h1 {
   margin-top: -70px;
 }
 
+/*divisória com detalhes*/
 .deco-bundle {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
@@ -133,40 +135,30 @@ body {
   height: 15px;
   width: 15px;
 }
+/*fim decoração da divisória*/
 
 .bundle {
+  /*border: 1px solid red;*/
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
   align-items: center;
-  justify-content: center;
-}
-
-.curriculum-bundle {
-  display: flex;
-  align-items: center;
-  height: 75px;
-  text-transform: uppercase;
-}
-
-.curriculum-bundle i {
-  margin: 15px;
-  font-size: 25px;
+  justify-content: space-around;
 }
 
 .profile-desc {
+  /*border: 2px solid green;*/
   display: flex;
   flex-direction: column;
   width: 50%;
   align-items: center;
-  justify-content: center;
 }
 
 .profile-desc-info {
+  /*border: 1px solid red;*/
   display: flex;
-  align-items: center;
   margin-top: -38px;
   padding: 5px;
+  align-items: center;
   font-weight: bold;
   font-family: "LEMON MILK";
   font-size: 20px;
@@ -265,12 +257,6 @@ hr {
   margin-top: -20px;
 }
 
-.profile-desc-scnd {
-  width: 50%;
-  align-items: center;
-  justify-items: center;
-}
-
 .title-ex {
   display: block;
   margin-right: 25px;
@@ -279,6 +265,18 @@ hr {
 .btn-title-ex {
   display: flex;
   margin-top: 5px;
+}
+
+.link-gg{
+  color: #000000;
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.link-gg i{
+  margin-left: 5px;
 }
 
 .btn-title-ex h5 {
@@ -371,6 +369,17 @@ hr {
   background-color: white;
   text-transform: uppercase;
 }
+
+.tech-stack{
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-hall{
+  margin-top: 15px;
+  background-color: #ffc375;
+}
+
 
 /*Estilos para desktops*/
 @media (min-width: 393px) and (max-height: 852px) {
@@ -514,8 +523,6 @@ hr {
     align-items: center;
     justify-content: center;
   }
-  .main-bundle {
-  }
 
   .main-bundle h1 {
     margin-top: 60px;
@@ -539,14 +546,6 @@ hr {
 
   .navbar {
     font-size: 20px;
-  }
-  .main-bundle-bx {
-  }
-
-  .main-bundle {
-  }
-
-  .main-bundle h1 {
   }
 
   .deco-bundle {
