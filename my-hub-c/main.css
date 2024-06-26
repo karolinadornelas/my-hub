@@ -66,9 +66,6 @@ body {
   
 }
 
-.main-bundle h1 {
-}
-
 /*divisória com detalhes*/
 .deco-bundle {
   border-top: 1px solid black;
@@ -400,7 +397,7 @@ hr {
 }
 
 #project-hall{
-  padding: 15px;
+  padding: 10px;
   display: block;
   margin-top: 20px;
   /* margin-top: 15px; */
@@ -410,7 +407,6 @@ hr {
 #project-hall-bundle{
   display: flex;
   flex-wrap: wrap;
-  overflow-x: auto;
 }
 
 .project-title{
@@ -421,20 +417,21 @@ hr {
 
 .project-bundle{
   display: flex;
-  margin: 10px;
-  width: 450px;
+  margin: 8px;
+  /* border: 1px solid black; */
   /* margin: 5px 75px; */
 }
 
 .project-overlook img{
-  width: 450px;
-  height: 230px;
+  width: 420px;
+  height: 210px;
   border-radius: 15px;
 
 }
 
 .project-details{
   text-align: justify;
+  width: 420px;
   /* margin-right: 35px; */
 }
 
@@ -458,6 +455,40 @@ hr {
   justify-content: space-between;
 }
 
+#wordPlay{
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 420px;
+  height: 210px;
+  color: #fff;
+  font-family: 'LEMON MILK';
+  letter-spacing: 5px;
+  background: linear-gradient(358deg, #96c8cb, #99c89c, #7b86ad);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 22s ease infinite;
+    -moz-animation: AnimationName 22s ease infinite;
+    animation: AnimationName 22s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
+}
+
 footer{
   display: flex;
   flex-direction: column;
@@ -472,9 +503,6 @@ footer p{
 
 /*Estilos para desktops*/
 @media (min-width: 393px) and (max-height: 852px) {
-  .content {
- 
-  }
   .navbar {
     font-size: 12px;
     font-family: "LEMON MILK";
@@ -519,8 +547,6 @@ footer p{
 }
 
 @media screen and (min-width: 430px) and (max-height: 932px) {
-  .content {
-  }
   .main-bundle-bx {
     display: flex;
     justify-content: center;
@@ -618,8 +644,6 @@ footer p{
     flex-direction: column;
   }
 }
-
-#
 
 @media screen and (min-width: 820px) and (max-height: 1180px) {
   .bb-x {
